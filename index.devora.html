@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapa Quente — Lanchonete de bairro em Vargem Grande Paulista</title>
+<link rel="stylesheet" href="style.devora.css">
+<link rel="stylesheet" href="script.devora.js">
+<meta name="description" content="Chapa Quente, lanchonete de bairro na Vila Esperança, São Paulo. Veja o cardápio, horários de funcionamento e endereço.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header" id="topo">
+  <div class="header-inner">
+    <a class="logo" href="#topo">DEVORA</a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#cardapio">Cardápio</a>
+      <a href="#horarios">Horários</a>
+      <a href="#local">Endereço</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <a class="btn btn-primary header-cta"
+       href="https://wa.me/5511912345678?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido."
+       target="_blank" rel="noopener">Pedir agora</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="hero-grate" aria-hidden="true"></div>
+    <div class="hero-steam" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="hero-content" id="heroContent">
+      <p class="hero-status" id="statusBadge">Verificando horário de funcionamento…</p>
+      <h1>DEVORA<br></h1>
+      <p class="hero-tagline">Lanche feito na hora, do jeito que só no Jardim Bela Vista sabe fazer.</p>
+      <div class="hero-actions">
+        <a href="#cardapio" class="btn btn-primary">Ver cardápio</a>
+        <a href="#local" class="btn btn-ghost">Como chegar</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cardapio" id="cardapio">
+    <div class="section-inner">
+      <h2>Cardápio</h2>
+      <p class="section-lead">Tudo montado e grelhado na chapa, na hora do seu pedido.</p>
+
+      <div class="category-tabs" role="tablist" aria-label="Categorias do cardápio">
+        <button class="tab is-active" data-category="lanches" role="tab" aria-selected="true">Lanches</button>
+        <button class="tab" data-category="porcoes" role="tab" aria-selected="false">Porções</button>
+        <button class="tab" data-category="bebidas" role="tab" aria-selected="false">Bebidas</button>
+        <button class="tab" data-category="sobremesas" role="tab" aria-selected="false">Sobremesas</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+
+        <article class="menu-item" data-category="lanches">
+          <div class="menu-item-top">
+            <h3>X-Tudo Chapa</h3>
+            <span class="price">R$ 28,90</span>
+          </div>
+          <p>Pão brioche, hambúrguer artesanal, presunto, queijo, ovo, bacon crocante e salada.</p>
+          <a class="order-link" href="https://wa.me/5511912345678?text=Ol%C3%A1!%20Quero%20pedir%20um%20X-Tudo%20Chapa.">Pedir no WhatsApp</a>
+        </article>
+
+        <article class="menu-item" data-category="lanches">
+          <div class="menu-item-top">
+            <h3>Bauru Clássico</h3>
+            <span class="price">R$ 24,90</span>
+          </div>
+          <p>Rosbife fatiado, queijo derretido, tomate e picles, no pão francês.</p>
+          <a class="order-link" href="https://wa.me/5511912345678?text=Ol%C3%A1!%20Quero%20pedir%20um%20Bauru%20Cl%C3%A1ssico.">Pedir no WhatsApp</a>
+        </article>
+
+        <article class="menu-item" data-category="lanches">
+          <div class="menu-item-top">
+            <h3>Misto Quente Especial</h3>
+            <span class="price">R$ 14,90</span>
+          </div>
+          <p>Presunto e queijo prensados na chapa com orégano e manteiga de garrafa.</p>
+          <a class="order-link" href="https://wa.me/5511912345678?text=Ol%C3%A1!%20Quero%20pedir%20um%20Misto%20Quente%20Especial.">Pedir no WhatsApp</a>
+        </article>
+
+        <article class="menu-item" data-category="lanches">
+          <div class="menu-item-top">
+            <h3>Cheesesteak Vila Esperança</h3>
+            <span class="price">R$ 26,90</span>
+          </div>
+          <p>Carne fatiada fininha, queijo prato derretido e cebola caramelizada na chapa.</p>
+          <a class="order-link" href="https://wa.me/5511912345678?text=Ol%C3%A1!%20Quero%20pedir%20um%20Cheesesteak%20Vila%20Esperan%C3%A7a.">Pedir no WhatsApp</a>
+        </article>
+
+        <article class="menu-item" data-category="porcoes">
+          <div class="menu-item-top">
+            <h3>Batata Frita Rústica</h3>
+            <span class="price">R$ 18,90</span>
+          </div>
+          <p>Batata com casca, temperada com alecrim, servida com maionese da casa.</p>
+          <a class="order-link" href="https://wa.me/5511912345678?text=Ol%C3%A1!%20Quero%20pedir%20uma%20Batata%20Frita%20R%C3%BAstica.">Pedir no WhatsApp</a>
+        </article>
+
+        <article class="menu-item" data-category="porcoes">
+          <div class="menu-item-top">
+            <h3>Anéis de Cebola</h3>
+            <span class="price">R$ 16,90</span>
+          </div>
+          <p>Empanados na hora e fritos até ficarem crocantes por fora.</p>
+          <a class="order-link" href="https://wa.me/5511912345678?text=Ol%C3%A1!%20Quero%20pedir%20An%C3%A9is%20de%20Cebola.">Pedir no WhatsApp</a>
+        </article>
+
+        <article class="menu-item" data-category="bebidas">
+          <div class="menu-item-top">
+            <h3>Suco Natural</h3>
+            <span class="price">R$ 8,90</span>
+          </div>
+          <p>Laranja, abacaxi com hortelã ou limão, feito na hora.</p>
+          <a class="order-link" href="https://wa.me/5511912345678?text=Ol%C3%A1!%20Quero%20pedir%20um%20Suco%20Natural.">Pedir no WhatsApp</a>
+        </article>
+
+        <article class="menu-item" data-category="bebidas">
+          <div class="menu-item-top">
+            <h3>Refrigerante lata</h3>
+            <span class="price">R$ 6,50</span>
+          </div>
+          <p>Coca-Cola, Guaraná ou Sprite, geladíssimos.</p>
+          <a class="order-link" href="https://wa.me/5511912345678?text=Ol%C3%A1!%20Quero%20pedir%20um%20Refrigerante.">Pedir no WhatsApp</a>
+        </article>
+
+        <article class="menu-item" data-category="bebidas">
+          <div class="menu-item-top">
+            <h3>Milk-shake Artesanal</h3>
+            <span class="price">R$ 15,90</span>
+          </div>
+          <p>Chocolate, morango ou ovomaltine, batido na hora com sorvete cremoso.</p>
+          <a class="order-link" href="https://wa.me/5511912345678?text=Ol%C3%A1!%20Quero%20pedir%20um%20Milk-shake.">Pedir no WhatsApp</a>
+        </article>
+
+        <article class="menu-item" data-category="sobremesas">
+          <div class="menu-item-top">
+            <h3>Pastel de Doce</h3>
+            <span class="price">R$ 9,90</span>
+          </div>
+          <p>Banana com canela e um fio de leite condensado, frito na hora.</p>
+          <a class="order-link" href="https://wa.me/5511912345678?text=Ol%C3%A1!%20Quero%20pedir%20um%20Pastel%20de%20Doce.">Pedir no WhatsApp</a>
+        </article>
+
+        <article class="menu-item" data-category="sobremesas">
+          <div class="menu-item-top">
+            <h3>Bolo de Fubá com Goiabada</h3>
+            <span class="price">R$ 10,90</span>
+          </div>
+          <p>Fubá cremoso, casquinha crocante e goiabada derretida por cima.</p>
+          <a class="order-link" href="https://wa.me/5511912345678?text=Ol%C3%A1!%20Quero%20pedir%20um%20Bolo%20de%20Fub%C3%A1.">Pedir no WhatsApp</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="horarios" id="horarios">
+    <div class="section-inner">
+      <h2>Horários de funcionamento</h2>
+      <ul class="hours-list" id="hoursList">
+        <li data-day="1"><span>Segunda-feira</span><span>Fechado</span></li>
+        <li data-day="2"><span>Terça-feira</span><span>11h às 23h</span></li>
+        <li data-day="3"><span>Quarta-feira</span><span>11h às 23h</span></li>
+        <li data-day="4"><span>Quinta-feira</span><span>11h às 23h</span></li>
+        <li data-day="5"><span>Sexta-feira</span><span>11h às 23h</span></li>
+        <li data-day="6"><span>Sábado</span><span>11h até meia-noite</span></li>
+        <li data-day="0"><span>Domingo</span><span>12h às 22h</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="local" id="local">
+    <div class="section-inner local-grid">
+      <div class="local-info">
+        <h2>Endereço</h2>
+        <p>
+          Rua das Palmeiras, 245<br>
+          Vila Esperança — São Paulo, SP<br>
+          CEP 05678-000
+        </p>
+        <a class="btn btn-primary"
+           href="https://www.google.com/maps/dir/?api=1&destination=Rua+das+Palmeiras+245+Vila+Esperan%C3%A7a+S%C3%A3o+Paulo"
+           target="_blank" rel="noopener">Traçar rota</a>
+      </div>
+      <div class="local-map">
+        <iframe
+          title="Mapa até a Chapa Quente"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Rua+das+Palmeiras+245+Vila+Esperan%C3%A7a+S%C3%A3o+Paulo&output=embed">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="contato">
+  <div class="section-inner footer-inner">
+    <div class="footer-brand">
+      <p class="footer-name">Devora</p>
+      <p>Rua das Palmeiras, 245 — Vila Esperança, São Paulo</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://wa.me/5511912345678" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+      <a href="tel:+5511912345678">(11) 91234-5678</a>
+    </div>
+    <p class="footer-copy">© <span id="anoAtual"></span> Devora. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
